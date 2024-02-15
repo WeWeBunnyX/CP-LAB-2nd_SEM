@@ -1,13 +1,3 @@
-#include <iostream> 
-
-int main() {
-Person personl;
-personl.name = "Alice";
-personl.pet.name = "Buddy"; 
-personl.introducePet();
-return 0;
-}
-
 #include <iostream>
 using namespace std;
 
