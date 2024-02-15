@@ -34,7 +34,7 @@ private:
     Person owner;
 
 public:
-    void setOwner(const Person &person) {
+    void Owner(Person &person) {
         owner = person;
     }
 
@@ -58,7 +58,7 @@ int main() {
 
     House myHouse;
     
-    myHouse.setOwner(person);
+    myHouse.Owner(person);
 
     myHouse.displayDetails();
 
