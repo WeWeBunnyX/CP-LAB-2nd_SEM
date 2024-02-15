@@ -18,7 +18,7 @@ class Person {
 public:
     string name;
     int age;
-    Dog pet;
+    Dog pet; //From Dog class
 
     void introduce() {
         cout << "Person's name: " << name << endl;
