@@ -63,13 +63,13 @@ int main() {
     person2.name = "Bob";
     person2.age = 15;
     person2.pet.name = "Max";
-    person2.pet.breed = "Golden Retriever";
+    person2.pet.breed = "Bulldog";
     person2.pet.dog_age = 2;
 
     Person person3;
-    person3.name = "Bob";
+    person3.name = "Jake";
     person3.age = 10;
-    person3.pet.name = "Max";
+    person3.pet.name = "Goldie";
     person3.pet.breed = "Golden Retriever";
     person3.pet.dog_age = 2;
 
