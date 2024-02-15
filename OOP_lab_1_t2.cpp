@@ -10,7 +10,7 @@ public:
     string breed;
     int dog_age;
 
-    void bark() const {
+    void bark() {
         cout << name << " says Woof!" << endl;
     }
 };
@@ -21,7 +21,7 @@ public:
     int age;
     Dog pet;
 
-    void introduce() const {
+    void introduce() {
         cout << "Name: " << name << endl;
         cout << "Age: " << age << endl;
         cout << "My dog's name is " << pet.name << endl;
@@ -40,9 +40,9 @@ public:
         residents.push_back(person);
     }
 
-    void displayResidents() const {
+    void displayResidents() {
         cout << "Residents of the house:" << endl;
-        for (const auto &resident : residents) {
+        for (auto &resident : residents) {
             resident.introduce();
             cout << endl;
         }
@@ -70,6 +70,7 @@ int main() {
     myHouse.addPerson(person1);
     myHouse.addPerson(person2);
 
+    // Displaying all persons' details in the house
     myHouse.displayResidents();
 
     return 0;
