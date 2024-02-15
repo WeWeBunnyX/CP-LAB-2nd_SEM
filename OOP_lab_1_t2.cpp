@@ -54,22 +54,29 @@ int main() {
     
     Person person1;
     person1.name = "Alice";
-    person1.age = 30;
+    person1.age = 20;
     person1.pet.name = "Buddy";
     person1.pet.breed = "Labrador";
     person1.pet.dog_age = 3;
 
     Person person2;
     person2.name = "Bob";
-    person2.age = 25;
+    person2.age = 15;
     person2.pet.name = "Max";
     person2.pet.breed = "Golden Retriever";
     person2.pet.dog_age = 2;
 
+    Person person3;
+    person3.name = "Bob";
+    person3.age = 10;
+    person3.pet.name = "Max";
+    person3.pet.breed = "Golden Retriever";
+    person3.pet.dog_age = 2;
+
     myHouse.addPerson(person1);
     myHouse.addPerson(person2);
+    myHouse.addPerson(person3);
 
-    // Displaying all persons' details in the house
     myHouse.displayResidents();
 
     return 0;
