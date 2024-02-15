@@ -29,14 +29,14 @@ public:
 
 class House {
 public:
-    vector persons;
+    vector person;
 
     void addPerson(const Person& newPerson) {
-        persons.push_back(newPerson);
+        person.push_back(newPerson);
     }
 
     void displayPersonsDetails() {
-        for (const auto& person : persons) {
+        for (const auto& person : person) {
             cout << "Name: " << person.name << endl;
             person.introducePet();
             cout << endl;
