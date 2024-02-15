@@ -8,20 +8,20 @@ public:
     void bark() {
         cout << name << " says Woof!" << endl;
     }
+    string breed;
+    int dog_age;
+        cout << "Breed: " << pet.breed << endl;
+        cout << "Age: " << pet.dog_age << endl;
+
 };
 
 class Person {
 public:
     string name;
-    string breed;
-    int dog_age;
 
     Dog pet;
     void introducePet() {
         cout << "My dog's name is " << pet.name << endl;
-        cout << "Breed: " << pet.breed << endl;
-        cout << "Age: " << pet.dog_age << endl;
-
         pet.bark();
     }
 };
