@@ -51,8 +51,7 @@ public:
 
 int main() {
     House myHouse;
-
-    // Adding persons to the house
+    
     Person person1;
     person1.name = "Alice";
     person1.age = 30;
