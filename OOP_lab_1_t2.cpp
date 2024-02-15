@@ -70,7 +70,6 @@ int main() {
     myHouse.addPerson(person1);
     myHouse.addPerson(person2);
 
-    // Displaying all persons' details in the house
     myHouse.displayResidents();
 
     return 0;
