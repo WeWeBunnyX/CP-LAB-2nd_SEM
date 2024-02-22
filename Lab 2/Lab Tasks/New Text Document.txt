@@ -1,9 +1,0 @@
-Open Visual Studio.
-Go to File -> New -> Project.
-Select Empty Project and give it a name.
-Once the project is created, right-click on the Source Files folder in the Solution Explorer pane, then select Add -> Existing Item.
-Navigate to the directory C:\............., select Animal.cpp and main.cpp, then click Add.
-Do the same for Header Files folder and add Animal.h.
-Once all files are added, press Ctrl + Shift + B to build the project.
-If the build is successful, press Ctrl + F5 to run the project.
-Remember, dear, you need to have Visual Studio with C++ development tools installed on your system to compile and run C++ programs. If you don't have it installed, you can download it from the official Microsoft website.
