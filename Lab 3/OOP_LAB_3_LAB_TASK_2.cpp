@@ -27,13 +27,13 @@ int main() {
     ContactManager contactManager;
 
     char choice;
-    cin.ignore();
     do {
         cout << "\n1. Add a contact\n";
         cout << "2. Search for a contact\n";
         cout << "3. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
+        cin.ignore();
 
         switch (choice) {
             case '1': {
