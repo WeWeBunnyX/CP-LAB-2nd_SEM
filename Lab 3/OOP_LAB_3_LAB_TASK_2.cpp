@@ -26,7 +26,7 @@ void searchContact(const string &name) {
 int main() {
     ContactManager contactManager;
 
-    int choice;
+    char choice;
     do {
         cout << "\n1. Add a contact\n";
         cout << "2. Search for a contact\n";
@@ -35,7 +35,7 @@ int main() {
         cin >> choice;
 
         switch (choice) {
-            case 1: {
+            case '1': {
                 string name, phoneNumber;
                 cout << "Enter name: ";
                 getline(cin , name);
@@ -44,20 +44,20 @@ int main() {
                 contactManager.addContact(name, phoneNumber);
                 break;
             }
-            case 2: {
+            case '2': {
                 string name;
                 cout << "Enter a contact name to search: ";
                 getline (cin, name);
                 contactManager.searchContact(name);
                 break;
             }
-            case 3:
+            case '3':
                 cout << "Exiting program...\n";
                 break;
             default:
                 cout << "Invalid choice! Please try again.\n";
         }
-    } while (choice != 3);
+    } while (choice != '3');
 
     return 0;
 }
