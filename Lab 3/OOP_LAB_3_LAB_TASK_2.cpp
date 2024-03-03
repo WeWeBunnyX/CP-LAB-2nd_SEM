@@ -27,6 +27,7 @@ int main() {
     ContactManager contactManager;
 
     char choice;
+    cin.ignore();
     do {
         cout << "\n1. Add a contact\n";
         cout << "2. Search for a contact\n";
