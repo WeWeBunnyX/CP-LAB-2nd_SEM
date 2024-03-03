@@ -38,16 +38,16 @@ int main() {
             case 1: {
                 string name, phoneNumber;
                 cout << "Enter name: ";
-                cin >> name;
+                getline(cin , name);
                 cout << "Enter phone number: ";
-                cin >> phoneNumber;
+                getline (cin, phoneNumber);
                 contactManager.addContact(name, phoneNumber);
                 break;
             }
             case 2: {
                 string name;
                 cout << "Enter a contact name to search: ";
-                cin >> name;
+                getline (cin, name);
                 contactManager.searchContact(name);
                 break;
             }
