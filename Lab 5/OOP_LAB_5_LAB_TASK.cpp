@@ -81,7 +81,7 @@ public:
     static void menu(Library& library) {
         int choice;
         do {
-            cout << "Library Management System\n";
+            cout << "\nLibrary Management System\n";
             cout << "1. Add a book\n";
             cout << "2. Remove a book\n";
             cout << "3. Search for a book by title\n";
@@ -90,7 +90,7 @@ public:
             cout << "6. Sort books by title\n";
             cout << "7. Sort books by author\n";
             cout << "8. Exit\n";
-            cout << "Enter your choice: ";
+            cout << "\nEnter your choice: ";
             cin >> choice;
 
             switch (choice) {
