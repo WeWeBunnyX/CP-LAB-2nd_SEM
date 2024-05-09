@@ -27,7 +27,7 @@ public class StudentRegistrationController {
 
     public void initialize() {
         // Initialize course list view with some sample courses
-        List<String> sampleCourses = List.of("Mathematics", "Physics", "Chemistry", "Computer Science");
+        List<String> sampleCourses = List.of("OOP", "ECS", "LA", "IS");
         courseListView.setItems(FXCollections.observableArrayList(sampleCourses));
         courseListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
@@ -43,7 +43,7 @@ public class StudentRegistrationController {
         String email = emailField.getText();
 
         // Save student details to a file
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("student_details.txt"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("student.txt"))) {
             writer.write("Name: " + name + "\n");
             writer.write("ID: " + id + "\n");
             writer.write("Email: " + email + "\n");

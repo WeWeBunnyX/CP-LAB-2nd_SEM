@@ -1,0 +1,10 @@
+Name: Hashir
+ID: 01-131232-030
+Email: xyz@gmail.com
+Selected Courses:
+OOP
+ECS
+OOP
+ECS
+LA
+IS
