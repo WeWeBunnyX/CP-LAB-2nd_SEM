@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="registerPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registrationsystem.RegisterController">
+    <center>
+        <VBox alignment="CENTER" spacing="10.0">
+            <Label text="Register" />
+            <TextField fx:id="usernameField" promptText="Username" />
+            <PasswordField fx:id="passwordField" promptText="Password" />
+            <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" />
+            <Button text="Register" onAction="#handleRegister" />
+            <Hyperlink text="Back to Login" onAction="#switchToLogin" />
+        </VBox>
+    </center>
+</BorderPane>
