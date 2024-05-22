@@ -1,0 +1,64 @@
+.root {
+    -fx-background-color: #000000;
+    -fx-padding: 20;
+    -fx-font-family: 'Arial';
+}
+
+Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+}
+
+TextField, PasswordField {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12pt;
+    -fx-border-color: #8f94fb;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5 10;
+}
+
+TextField:focused, PasswordField:focused {
+    -fx-border-color: #4e54c8;
+}
+
+Button {
+    -fx-background-color: linear-gradient(to bottom right, #8f94fb, #4e54c8);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 5);
+    -fx-padding: 10 20;
+}
+
+Button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+}
+
+Button:pressed {
+    -fx-background-color: #4e54c8;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5), 5, 0, 0, 1);
+}
+
+/* Specific style for the Login button */
+#login-button {
+    -fx-background-color: linear-gradient(to bottom right, #1e90ff, #00bfff);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 12, 0, 0, 6);
+    -fx-padding: 12 24;
+}
+
+#login-button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #00bfff, #1e90ff);
+}
+
+#login-button:pressed {
+    -fx-background-color: #1e90ff;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.6), 6, 0, 0, 2);
+}
